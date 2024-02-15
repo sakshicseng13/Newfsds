@@ -13,4 +13,4 @@ git commit -m "my first commit"
 
 git pull
 
-bash <filename>.sh
+bash your filename.sh
