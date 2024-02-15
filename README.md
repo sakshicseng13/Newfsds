@@ -12,3 +12,5 @@ git add.
 git commit -m "my first commit"
 
 git pull
+
+bash <filename>.sh
