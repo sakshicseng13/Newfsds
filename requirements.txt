@@ -6,5 +6,7 @@ pandas
 
 seaborn
 
+matplotlib.pyplot
+
 -e .
 ipykernal
