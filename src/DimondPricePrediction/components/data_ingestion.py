@@ -3,8 +3,7 @@
 class DataIngestion:
     def init(self):
         pass
-
-    def Initiate_DataIngestion(self):
+taIngestion(self):
         pass
 
     def Get_dataTransformation(self):
