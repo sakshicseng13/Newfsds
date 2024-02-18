@@ -4,9 +4,7 @@ scikit-learn
 
 pandas
 
-seaborn
-
-matplotlib.pyplot
-
 -e .
-ipykernal
+
+
+ 
