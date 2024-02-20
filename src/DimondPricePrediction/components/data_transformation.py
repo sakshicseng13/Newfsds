@@ -20,8 +20,9 @@ class DataTransformationConfig:
 
 
 class DataTransformation:
-    def _init_(self):
-        self.data_transformation_config =DataTransformationConfig()
+    def __init__(self):
+        self.data_transformation_config=DataTransformationConfig()
+
 
     def get_data_transformation(self):
         try:
@@ -66,17 +67,13 @@ class DataTransformation:
             return preprocessor
 
 
-        
-        
-        
-        
         except Exception as e:
             logging.info("Exception occured during data transformation")
 
             raise customexception(e,sys)
         
 
-    def initialize_data_transformation(self):
+    def initialize_data_transformation(self,train_path,test_path):
         try:
 
             train_df=pd.read_csv(train_path)
