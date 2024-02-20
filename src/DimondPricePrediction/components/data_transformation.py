@@ -1,3 +1,4 @@
+
 import os
 import sys
 import pandas as pd
@@ -23,8 +24,10 @@ class DataTransformation:
     def __init__(self):
         self.data_transformation_config=DataTransformationConfig()
 
-
+        
+    
     def get_data_transformation(self):
+        
         try:
             logging.info('Data Transformation initiated')
             
@@ -36,7 +39,7 @@ class DataTransformation:
             cut_categories = ['Fair', 'Good', 'Very Good','Premium','Ideal']
             color_categories = ['D', 'E', 'F', 'G', 'H', 'I', 'J']
             clarity_categories = ['I1','SI2','SI1','VS2','VS1','VVS2','VVS1','IF']
-
+            
             logging.info('Pipeline Initiated')
             
             ## Numerical Pipeline
@@ -65,26 +68,28 @@ class DataTransformation:
             ])
             
             return preprocessor
+            
 
-
+            
+            
+        
         except Exception as e:
-            logging.info("Exception occured during data transformation")
+            logging.info("Exception occured in the initiate_datatransformation")
 
             raise customexception(e,sys)
-        
-
+            
+    
     def initialize_data_transformation(self,train_path,test_path):
         try:
-
             train_df=pd.read_csv(train_path)
             test_df=pd.read_csv(test_path)
             
             logging.info("read train and test data complete")
             logging.info(f'Train Dataframe Head : \n{train_df.head().to_string()}')
             logging.info(f'Test Dataframe Head : \n{test_df.head().to_string()}')
-
+            
             preprocessing_obj = self.get_data_transformation()
-
+            
             target_column_name = 'price'
             drop_columns = [target_column_name,'id']
             
@@ -115,11 +120,10 @@ class DataTransformation:
                 train_arr,
                 test_arr
             )
-
-        
-        
-        
+            
         except Exception as e:
-            logging.info("Exception occured during data transformation")
+            logging.info("Exception occured in the initiate_datatransformation")
 
             raise customexception(e,sys)
+            
+    
