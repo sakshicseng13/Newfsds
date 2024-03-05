@@ -4,6 +4,8 @@ scikit-learn
 
 pandas
 
+flask
+
 -e .
 
 
