@@ -1,6 +1,1 @@
-From python:3.8-slim-buster
-WORKDIR /service
-COPY requirements.txt .
-COPY . ./
-RUN pip install -r requirements.txt
-ENTRYPOINT ["python","app.py"]
+FROMpython3","app.py"]
