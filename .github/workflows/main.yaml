@@ -11,7 +11,7 @@ jobs:
     name: Build Image
     runs-on: 'ubuntu-latest'
     steps:
-    - name: Checkout the code
+    - name: Check out code
       uses: actions/checkout@v2
     - name: Install Utilities
       run:
