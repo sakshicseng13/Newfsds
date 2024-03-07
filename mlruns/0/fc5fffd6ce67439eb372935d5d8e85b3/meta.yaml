@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Newfsds/mlruns/0/fc5fffd6ce67439eb372935d5d8e85b3/artifacts
+end_time: 1709846592178
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fc5fffd6ce67439eb372935d5d8e85b3
+run_name: exultant-mole-209
+run_uuid: fc5fffd6ce67439eb372935d5d8e85b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709846584289
+status: 3
+tags: []
+user_id: USER
